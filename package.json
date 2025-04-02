@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.45.1",
-    "@thirdweb-dev/wagmi-adapter": "^0.2.18",
+    "@thirdweb-dev/wagmi-adapter": "0.2.46",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "thirdweb": "^5.88.4",
+    "thirdweb": "5.93.11",
     "viem": "2.22.17",
     "wagmi": "2.14.11"
   },
