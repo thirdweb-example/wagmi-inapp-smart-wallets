@@ -1,7 +1,7 @@
 import { http, createConfig } from "wagmi";
 import { baseSepolia } from "wagmi/chains";
 import { inAppWalletConnector } from "@thirdweb-dev/wagmi-adapter";
-import { defineChain as thirdwebChain, createThirdwebClient } from "thirdweb";
+import { createThirdwebClient } from "thirdweb";
 
 const clientId = import.meta.env.VITE_THIRDWEB_CLIENT_ID;
 
@@ -20,8 +20,8 @@ export const config = createConfig({
   connectors: [
     inAppWalletConnector({
       client,
-      smartAccount: {
-        chain: thirdwebChain(chain),
+      executionMode: {
+        mode: "EIP7702",
         sponsorGas: true,
       },
     }),

@@ -14,7 +14,7 @@
     "@thirdweb-dev/wagmi-adapter": "0.2.46",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "thirdweb": "5.93.11",
+    "thirdweb": "5.110.0",
     "viem": "2.22.17",
     "wagmi": "2.14.11"
   },
